@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tama.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <StackLayout BackgroundColor="{StaticResource AppBackgroundColor}" >
+
+            <Image Source="title.png"
+               AnchorY="-1"    
+               >
+            </Image>
+
+            <ImageButton x:Name="start"
+                     Source="startbutton"
+                     BackgroundColor="Transparent"
+                     BorderWidth="10"
+                     BorderColor="Transparent"
+                     CornerRadius="55"
+                     Padding="60"
+                     VerticalOptions="Center"
+                     TranslationY="-150"
+                     Pressed="StartButton_Pressed"
+                     >
+            </ImageButton>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
+    
+    

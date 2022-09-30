@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tama.NavPage"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="ResetButton"
+                 Text="RESET Fret-otchi"
+                 Order="Primary"
+                 Priority="0"
+                 Clicked="ResetButton_Clicked"
+                     />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+ 
+        <Grid>
+            <StackLayout Orientation="Vertical">
+                <Image x:Name="BackgroundImage"
+                    > 
+                </Image>
+
+            </StackLayout>
+
+                <Label x:Name="happinessStat"
+                       BackgroundColor="#2c4671"
+                       TextColor="AliceBlue"
+                       HorizontalOptions="Start" VerticalOptions="StartAndExpand"
+                       HeightRequest="32" WidthRequest="120"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       TranslationX="40" TranslationY="50"
+                       Text="Happiness"
+                       >
+                    
+                </Label>
+           
+                <ProgressBar x:Name="HappinessBar"
+                             ProgressColor="#2c4671"
+                             HorizontalOptions="Start" VerticalOptions="StartAndExpand"
+                             HeightRequest="1" WidthRequest="200"
+                             ScaleY="28"
+                             TranslationX="170" TranslationY="65"
+                            >
+                
+                </ProgressBar>
+
+            <Frame  AnchorX="0"
+                    AnchorY="1.11"
+                    BackgroundColor="Transparent"
+                    Scale="0.27"
+                   > 
+                <StackLayout Orientation="Horizontal"
+                            >
+                    <ImageButton Source="iconhunger.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Hunger_Clicked">
+                    </ImageButton>
+                    <ImageButton Source="iconthirst.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Thirst_Clicked">
+                    </ImageButton>
+                    <ImageButton Source="iconboredom.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Boredom_Clicked">
+                    </ImageButton>
+                    <ImageButton Source="iconloneliness.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Loneliness_Clicked">
+                    </ImageButton>
+                    <ImageButton Source="iconstimulated.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Stimulated_Clicked">
+                    </ImageButton>
+                    <ImageButton Source="iconsleep.png"
+                                 BackgroundColor="Transparent"
+                                 Clicked="Sleep_Clicked">
+                    </ImageButton>
+                </StackLayout>
+            </Frame>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

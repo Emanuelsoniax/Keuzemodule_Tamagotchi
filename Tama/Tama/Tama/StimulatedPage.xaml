@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tama.StimulatedPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Orientation="Vertical">
+                <Image x:Name="BackgroundImage"
+                    >
+                </Image>
+
+            </StackLayout>
+
+            <Label
+                       BackgroundColor="#2c4671"
+                       TextColor="AliceBlue"
+                       HorizontalOptions="Start" VerticalOptions="StartAndExpand"
+                       HeightRequest="32" WidthRequest="120"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       TranslationX="40" TranslationY="50"
+                       Text="Stimulated"
+                       >
+
+            </Label>
+
+            <ProgressBar     x:Name="ProgressBar"
+                             ProgressColor="#2c4671"
+                             HorizontalOptions="Start" VerticalOptions="StartAndExpand"
+                             HeightRequest="1" WidthRequest="200"
+                             ScaleY="28"
+                             TranslationX="170" TranslationY="65"
+                            >
+
+            </ProgressBar>
+
+            <Frame  TranslationX="-150"
+                    TranslationY="380"
+                    BackgroundColor="Transparent"
+                    Scale="0.27"
+                   >
+                <StackLayout Orientation="Horizontal"
+                            >
+                    <ImageButton Source="iconhunger.png"
+                                 BackgroundColor="Transparent"
+                                 >
+                    </ImageButton>
+                    <ImageButton Source="iconthirst.png"
+                                 BackgroundColor="Transparent">
+                    </ImageButton>
+                    <ImageButton Source="iconboredom.png"
+                                 BackgroundColor="Transparent"
+                                 >
+                    </ImageButton>
+                    <ImageButton Source="iconloneliness.png"
+                                 BackgroundColor="Transparent">
+                    </ImageButton>
+                    <ImageButton Source="iconstimulated.png"
+                                 BackgroundColor="Transparent"
+                                 TranslationY="-75">
+                    </ImageButton>
+                    <ImageButton Source="iconsleep.png"
+                                 BackgroundColor="Transparent">
+                    </ImageButton>
+                </StackLayout>
+            </Frame>
+            <ImageButton x:Name="Resource"
+                         Source="resourcestimulated"
+                         Aspect="AspectFit"
+                         Padding="130"
+                         TranslationY="-245"
+                         CornerRadius="200"
+                         BackgroundColor="Transparent"
+                         Clicked="Resource_Clicked"
+                         >
+            </ImageButton>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

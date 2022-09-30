@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tama.App"
+             >
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#2c4671" />
+                
+            </Style>
+        
+             
+        <!-- Colors -->
+        <Color x:Key="AppPrimaryColor">#2c4671</Color>
+        <Color x:Key="AppBackgroundColor">#a9d0db</Color>
+        <Color x:Key="PrimaryColor">#e83b3b</Color>
+        <Color x:Key="SecondaryColor">#977b6a</Color>
+        <Color x:Key="TertiaryColor">#ecd9ca</Color>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
